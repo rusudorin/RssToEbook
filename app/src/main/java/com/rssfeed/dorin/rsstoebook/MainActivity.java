@@ -71,10 +71,10 @@ public class MainActivity extends AppCompatActivity
         final EditText txtUrl = new EditText(this);
 
         new AlertDialog.Builder(this)
-                .setTitle("Moustachify Link")
-                .setMessage("Paste in the link of an image to moustachify!")
+                .setTitle("Enter link")
+                .setMessage("Enter any link (well anything for now)")
                 .setView(txtUrl)
-                .setPositiveButton("Moustachify", new DialogInterface.OnClickListener() {
+                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int whichButton) {
                         TextView textView = (TextView) findViewById(R.id.textView);
                         textView.setText(txtUrl.getText());

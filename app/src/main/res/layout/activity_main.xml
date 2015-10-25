@@ -26,14 +26,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <fragment
-        android:id="@+id/navigation_drawer"
-        android:name="com.rssfeed.dorin.rsstoebook.NavigationDrawerFragment"
-        android:layout_width="@dimen/navigation_drawer_width"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        tools:layout="@layout/fragment_navigation_drawer" />
-
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
@@ -56,5 +48,13 @@
                 android:textColor="#ffffff"/>
         </LinearLayout>
     </ScrollView>
+
+    <fragment
+        android:id="@+id/navigation_drawer"
+        android:name="com.rssfeed.dorin.rsstoebook.NavigationDrawerFragment"
+        android:layout_width="@dimen/navigation_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        tools:layout="@layout/fragment_navigation_drawer" />
 
 </android.support.v4.widget.DrawerLayout>
